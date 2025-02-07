@@ -91,7 +91,8 @@ ol {
 }
 
 .content__list-container {
-  height: 298px;
+  height: 300px;
+  padding: 2px;
   overflow-y: scroll;
   position: relative;
 }
@@ -135,7 +136,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #FFFFFF;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed','Arial','sans-serif';
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -145,7 +146,7 @@ ol {
 
 .title {
   color: #FFFFFF;
-  font-family: 'Oswald';
+  font-family: 'Oswald','Helios Cond','Pragmatica Cond', 'Bebas Neue';
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -153,7 +154,6 @@ ol {
   text-transform: uppercase;
   margin-bottom: 26px;
   width: 259px;
-  height: 210px;
 }
 
 .content__accent {
@@ -170,7 +170,7 @@ ol {
   overflow: hidden;
   white-space: nowrap;
   color: #FFFFFF;
-  font-family: 'Oswald';
+  font-family: 'Oswald','Helios Cond','Pragmatica Cond', 'Bebas Neue';
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
@@ -181,7 +181,9 @@ ol {
 
 .content__video-card-description {
   overflow: hidden;
-  line-clamp: 2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .search-form__fieldset {
@@ -207,7 +209,7 @@ ol {
   border-style: solid;
   border-color: #FFFFFF;
   background-color: transparent;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed','Arial','sans-serif';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -259,7 +261,7 @@ ol {
   display: block;
 }
 
-.search-form__label:hover {
+.search-form__label .search-form__label-text:hover {
   text-decoration: underline;
 }
 
@@ -269,7 +271,6 @@ ol {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: end;
 }
 
@@ -277,12 +278,13 @@ ol {
   border: 1px solid #FFFFFF;
   color: white;
   background-color: transparent;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed','Arial','sans-serif';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   cursor: pointer;
+  height: 34px;
 }
 
 .more-button {
