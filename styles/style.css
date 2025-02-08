@@ -261,7 +261,7 @@ ol {
   display: block;
 }
 
-.search-form__label .search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
